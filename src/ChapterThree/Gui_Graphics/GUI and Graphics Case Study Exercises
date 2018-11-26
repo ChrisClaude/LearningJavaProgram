@@ -1,0 +1,21 @@
+4.1 Using loops and control statements to draw lines can lead to many interesting designs.
+a) Create the design in the left screen capture of Fig. 4.20. This design draws lines from
+the top-left corner, fanning them out until they cover the upper-left half of the panel.
+One approach is to divide the width and height into an equal number of steps (we found
+15 steps worked well). The first endpoint of a line will always be in the top-left corner
+(0, 0). The second endpoint can be found by starting at the bottom-left corner and
+moving up one vertical step and right one horizontal step. Draw a line between the two
+endpoints. Continue moving up and to the right one step to find each successive endpoint.
+The figure should scale accordingly as you resize the window.
+b) Modify part (a) to have lines fan out from all four corners, as shown in the right screen
+capture of Fig. 4.20. Lines from opposite corners should intersect along the middle.
+
+4.2 Figure 4.21 displays two additional designs created using while loops and drawLine.
+a) Create the design in the left screen capture of Fig. 4.21. Begin by dividing each edge
+into an equal number of increments (we chose 15 again). The first line starts in the topleft
+corner and ends one step right on the bottom edge. For each successive line, move
+down one increment on the left edge and right one increment on the bottom edge. Continue
+drawing lines until you reach the bottom-right corner. The figure should scale as
+you resize the window so that the endpoints always touch the edges.
+b) Modify your answer in part (a) to mirror the design in all four corners, as shown in the
+right screen capture of Fig. 4.21.
