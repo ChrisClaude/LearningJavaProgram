@@ -19,9 +19,9 @@ public class HeartRatesTest {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter first name:");
+        System.out.print("Enter first name: ");
         firstName = input.nextLine();
-        System.out.print("Enter last name:");
+        System.out.print("Enter last name: ");
         lastName = input.nextLine();
         System.out.print("Enter year of birth: ");
         year = input.nextInt();
@@ -34,7 +34,7 @@ public class HeartRatesTest {
 
         System.out.printf("First name: %s\nLast name: %s\n" +
                         "Date of birth(day/Month/year): %d/%d/%d\n" +
-                        "Age: %d\nMaximum heart rate: %d\nTarget heart rate range: %s",
+                        "Age: %d\nMaximum heart rate: %d per minute\nTarget heart rate range: %s per minute",
                 h.getFirstName(), h.getLastName(), h.getDay(), h.getMonth(), h.getYear(),
                 h.ageInYears(), h.maxHeartRate(), h.targetHeartRateRange());
 
