@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
  * InputDialog.java
  * This program asks the user to input his name
  * then it welcomes the user by name
+ *
  * @author Claude C DE-TCHAMBILA
  * Date: 13 November 2018
  */
