@@ -68,7 +68,7 @@ public class LettersGrades {
                     "B: ", bCount, // display number of B grades
                     "C: ", cCount,
                     "D: ", dCount,
-                    "F: ", fCount-1); // it fCount - 1 for the reason that the end of file input falls in the default case that increments fCount
+                    "F: ", fCount-1); // it's fCount - 1 for the reason that the end of file input falls in the default case that increments fCount
         } else
             System.out.println("No grades were entered");
     }
