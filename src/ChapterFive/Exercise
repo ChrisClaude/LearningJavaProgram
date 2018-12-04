@@ -1,0 +1,64 @@
+5.15 (Triangle Printing Program) Write an application that displays the following patterns separately,
+one below the other. Use for loops to generate the patterns. All asterisks (*) should be printed
+by a single statement of the form System.out.print('*'); which causes the asterisks to print side
+by side. A statement of the form System.out.println(); can be used to move to the next line. A
+statement of the form System.out.print(' '); can be used to display a space for the last two patterns.
+There should be no other output statements in the program. [Hint: The last two patterns require
+that each line begin with an appropriate number of blank spaces.]
+(a) (b) (c) (d)
+* ********** ********** *
+** ********* ********* **
+*** ******** ******** ***
+**** ******* ******* ****
+***** ****** ****** *****
+****** ***** ***** ******
+******* **** **** *******
+******** *** *** ********
+********* ** ** *********
+********** * * **********
+
+5.20 (Calculating the Value of π) Calculate the value of π from the infinite series
+Print a table that shows the value of π approximated by computing the first 200,000 terms of this
+series. How many terms do you have to use before you first get a value that begins with 3.14159?
+
+5.21 (Pythagorean Triples) A right triangle can have sides whose lengths are all integers. The set
+of three integer values for the lengths of the sides of a right triangle is called a Pythagorean triple.
+The lengths of the three sides must satisfy the relationship that the sum of the squares of two of the
+sides is equal to the square of the hypotenuse. Write an application that displays a table of the
+Pythagorean triples for side1, side2 and the hypotenuse, all no larger than 500. Use a triple-nested
+for loop that tries all possibilities. This method is an example of “brute-force” computing. You’ll
+learn in more advanced computer science courses that for many interesting problems there’s no
+known algorithmic approach other than using sheer brute force.
+
+5.22 (Modified Triangle Printing Program) Modify Exercise 5.15 to combine your code from
+the four separate triangles of asterisks such that all four patterns print side by side. [Hint: Make clever
+use of nested for loops.]
+
+Making a Difference
+5.31 (Global Warming Facts Quiz) The controversial issue of global warming has been widely
+publicized by the film “An Inconvenient Truth,” featuring former Vice President Al Gore. Mr. Gore
+and a U.N. network of scientists, the Intergovernmental Panel on Climate Change, shared the 2007
+Nobel Peace Prize in recognition of “their efforts to build up and disseminate greater knowledge
+about man-made climate change.” Research both sides of the global warming issue online (you
+might want to search for phrases like “global warming skeptics”). Create a five-question multiplechoice
+quiz on global warming, each question having four possible answers (numbered 1–4). Be objective
+and try to fairly represent both sides of the issue. Next, write an application that administers
+the quiz, calculates the number of correct answers (zero through five) and returns a message to the
+user. If the user correctly answers five questions, print “Excellent”; if four, print “Very good”; if
+three or fewer, print “Time to brush up on your knowledge of global warming,” and include a list
+of some of the websites where you found your facts.
+
+5.32 (Tax Plan Alternatives; The “FairTax”) There are many proposals to make taxation fairer.
+Check out the FairTax initiative in the United States at www.fairtax.org. Research how the proposed
+FairTax works. One suggestion is to eliminate income taxes and most other taxes in favor of
+a 23% consumption tax on all products and services that you buy. Some FairTax opponents question
+the 23% figure and say that because of the way the tax is calculated, it would be more accurate
+to say the rate is 30%—check this carefully. Write a program that prompts the user to enter expenses
+in various expense categories they have (e.g., housing, food, clothing, transportation, education,
+health care, vacations), then prints the estimated FairTax that person would pay.
+
+5.33 (Facebook User Base Growth) According to CNNMoney.com, Facebook hit one billion users
+in October 2012. Using the compound-growth technique you learned in Fig. 5.6 and assuming
+its user base grows at a rate of 4% per month, how many months will it take for Facebook to grow
+its user base to 1.5 billion users? How many months will it take for Facebook to grow its user base
+to two billion users?
