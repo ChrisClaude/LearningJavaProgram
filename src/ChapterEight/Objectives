@@ -1,0 +1,25 @@
+In this chapter you’ll:
+
+■ Use the throw statement to
+indicate that a problem has
+occurred.
+
+■ Use keyword this in a
+constructor to call another
+constructor in the same class.
+
+■ Use static variables and
+methods.
+
+■ Import static members of
+a class.
+
+■ Use the enum type to create
+sets of constants with unique
+identifiers.
+
+■ Declare enum constants with
+parameters.
+
+■ Use BigDecimal for precise
+monetary calculations.
