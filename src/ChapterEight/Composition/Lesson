@@ -1,0 +1,5 @@
+A class can have references to objects of other classes as members. This is called composition
+and is sometimes referred to as a has-a relationship. For example, an AlarmClock object
+needs to know the current time and the time when it’s supposed to sound its alarm,
+so it’s reasonable to include two references to Time objects in an AlarmClock object. A car
+has-a steering wheel, a break pedal and an accelerator pedal.
