@@ -1,0 +1,7 @@
+Each enum declaration declares an enum class with the following restrictions:
+1. enum constants are implicitly final.
+2. enum constants are implicitly static.
+3. Any attempt to create an object of an enum type with operator new results in a
+compilation error.
+The enum constants can be used anywhere constants can be used, such as in the case labels
+of switch statements and to control enhanced for statements.
