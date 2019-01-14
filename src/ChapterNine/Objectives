@@ -1,0 +1,11 @@
+This chapter continues our discussion of object-oriented programming (OOP) by introducing
+inheritance, in which a new class is created by acquiring an existing class’s members
+and possibly embellishing them with new or modified capabilities. With inheritance,
+you can save time during program development by basing new classes on existing proven
+and debugged high-quality software. This also increases the likelihood that a system will
+be implemented and maintained effectively.
+
+Organizations develop their own class libraries and can take advantage of others available worldwide. Some day, most
+new software likely will be constructed from standardized reusable components, just as
+automobiles and most computer hardware are constructed today. This will facilitate the
+rapid development of more powerful, abundant and economical software.
