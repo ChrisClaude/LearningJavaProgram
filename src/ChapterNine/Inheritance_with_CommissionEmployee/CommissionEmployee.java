@@ -7,15 +7,13 @@ package ChapterNine.Inheritance_with_CommissionEmployee;
  */
 public class CommissionEmployee {
 
-    protected final String firstName;
-    protected final String lastName;
-    protected final String socialSecurityNumber;
-    protected double grossSales; // gross weekly sales
-    protected double commissionRate; //commission percentage
+    private final String firstName;
+    private final String lastName;
+    private final String socialSecurityNumber;
+    private double grossSales; // gross weekly sales
+    private double commissionRate; //commission percentage
 
     // five-argument constructor
-
-
     public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
         // implicit call to Object's default constructor occurs here
 
@@ -23,7 +21,7 @@ public class CommissionEmployee {
         if (grossSales < 0.0)
             throw new IllegalArgumentException("Gross sales must be >= 0.0");
 
-        // if commmissionRate is invalid throw exception
+        // if commissionRate is invalid throw exception
         if (commissionRate <= 0.0 || commissionRate >= 1.0)
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
 
@@ -66,7 +64,6 @@ public class CommissionEmployee {
     }
 
     // return commission rate
-
     public void setCommissionRate(double commissionRate) {
         if (commissionRate <= 0.0 || commissionRate >= 1.0)
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
@@ -80,12 +77,11 @@ public class CommissionEmployee {
     }
 
     // return String representation of CommissionEmployee object
-
-
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f",
                 "commission employee", firstName, lastName, "social security number", socialSecurityNumber,
                 "gross sales", grossSales, "commission rate", commissionRate);
     }
+
 }
