@@ -1,4 +1,4 @@
-package ChapterNine.Gui_Displaying_Text_and_Images_Using_Labels;
+package Chapter_9.Gui_Displaying_Text_and_Images_Using_Labels;
 
 import java.awt.BorderLayout;
 import javax.swing.ImageIcon;

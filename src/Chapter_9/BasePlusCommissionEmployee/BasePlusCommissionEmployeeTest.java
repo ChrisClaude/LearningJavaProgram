@@ -1,4 +1,6 @@
-package ChapterNine.BasePlusCommissionEmployee;
+package Chapter_9.BasePlusCommissionEmployee;
+
+import Chapter_9.Inheritance_with_CommissionEmployee.BasePlusCommissionEmployee;
 
 /**
  * BasePlusCommissionEmployeeTest.java

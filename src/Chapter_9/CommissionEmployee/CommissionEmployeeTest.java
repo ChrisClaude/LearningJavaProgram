@@ -1,4 +1,6 @@
-package ChapterNine.CommissionEmployee;
+package Chapter_9.CommissionEmployee;
+
+import Chapter_9.Inheritance_with_CommissionEmployee.CommissionEmployee;
 
 /**
  * CommissionEmployeeTest.java
