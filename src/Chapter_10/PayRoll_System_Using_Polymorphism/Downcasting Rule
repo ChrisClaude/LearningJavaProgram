@@ -1,0 +1,16 @@
+You cannot invoke a subclass only method on a superclass variable;
+You need to downcast the superclass variable before calling a subclass only method.
+
+PayRollSystemTest.java
+Similarly, if lines 44 and 49 used superclass variable currentEmployee to invoke subclass-
+only methods getBaseSalary and setBaseSalary, we’d receive “cannot find
+symbol” compilation errors at these lines.
+
+Similarly, if lines 56 and 60 used superclass variable currentEmployee to invoke subclass-
+only methods getBaseSalary and setBaseSalary, we’d receive “cannot find
+symbol” compilation errors at these lines. Attempting to invoke subclass-only methods via
+a superclass variable is not allowed—even though lines 56 and 60 execute only if
+instanceof in line 49 returns true to indicate that currentEmployee holds a reference to
+a BasePlusCommissionEmployee object. Using a superclass Employee variable, we can
+invoke only methods found in class Employee—earnings, toString and Employee’s get
+and set methods.
