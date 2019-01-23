@@ -6,11 +6,11 @@ public class Car implements CarbonFootPrint{
     private final String model;
     private final int yearBuilt;
     private double value;
-    private int monthlyPetrolConsumption; // in liters
+    private int monthlyPetrolConsumption;
 
     public Car(String manufacturer, String model, int yearBuilt, double value, int monthlyPetrolConsumption) {
-        if (yearBuilt < 1990 || yearBuilt > 2019)
-            throw new IllegalArgumentException("The manufactured year must be > 1990 or < 2019");
+        if (yearBuilt < 1900 || yearBuilt > 2019)
+            throw new IllegalArgumentException("The manufactured year must be > 1900 or < 2019");
 
         this.manufacturer = manufacturer;
         this.model = model;
@@ -44,12 +44,12 @@ public class Car implements CarbonFootPrint{
         this.value = value;
     }
 
-    // returns the car's monthly petrol consumption
+    // returns monthly petrol consumption
     public int getMonthlyPetrolConsumption() {
         return monthlyPetrolConsumption;
     }
 
-    // sets the car's monthly petrol consumption
+    // sets monthly petrol consumption
     public void setMonthlyPetrolConsumption(int monthlyPetrolConsumption) {
         this.monthlyPetrolConsumption = monthlyPetrolConsumption;
     }
@@ -57,13 +57,13 @@ public class Car implements CarbonFootPrint{
     // returns a String representation of the Car object
     @Override
     public String toString() {
-        return String.format("\t\t\tCar%nManufacturer: %s%nModel: %s%nYear Manufactured: %d%nValue: %.2f%n",
+        return String.format("\tCar%nManufacturer: %s%nModel: %s%nYear Manufactured: %d%nValue: %.2f",
                 getManufacturer(), getModel(), getYearBuilt(), getValue());
     }
 
     // calculation the car's carbon emission
     @Override
     public double getCarbonFootPrint() {
-        return getMonthlyPetrolConsumption() * 19.4;
+        return monthlyPetrolConsumption * 19.4;
     }
 }

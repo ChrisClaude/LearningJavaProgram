@@ -6,7 +6,7 @@ public class Building implements CarbonFootPrint{
     private String address;
     private String buildingType; // residential, administrative, hotel
     private final int yearCompleted;
-    private int monthlyElectricUsage; // monthly electric usage of the building in kwh
+    private int monthlyElectricUsage;
 
     // constructor
     public Building(String name, String address, String buildingType, int yearCompleted, int monthlyElectricUsage) {
@@ -55,12 +55,12 @@ public class Building implements CarbonFootPrint{
         return yearCompleted;
     }
 
-    // returns the monthly electric usage for the building
+    // returns monthly electric usage
     public int getMonthlyElectricUsage() {
         return monthlyElectricUsage;
     }
 
-    // sets the monthly electric usage for the building
+    // sets monthly electric usage
     public void setMonthlyElectricUsage(int monthlyElectricUsage) {
         this.monthlyElectricUsage = monthlyElectricUsage;
     }
@@ -68,7 +68,7 @@ public class Building implements CarbonFootPrint{
     // returns a String representation of the Building object
     @Override
     public String toString() {
-        return String.format("\t\t\t%s Building%n%nName: %s%nAddress: %s%nType: %sBuilding%nYear of completion: %d%n",
+        return String.format("\t%s Building%nName: %s%nAddress: %s%nType: %s Building%nYear of completion: %d",
                 getName(), getName(), getAddress(), getBuildingType(), getYearCompleted());
     }
 
@@ -78,6 +78,6 @@ public class Building implements CarbonFootPrint{
         /*
         Carbon Emission = [monthly electric usage (in Kwh) * 16.44 lbs of carbon](in cubic feet) * 0.12lbs of Carbon
          */
-        return getMonthlyElectricUsage() * 16.44 * 0.12;
+        return monthlyElectricUsage * 16.44 * 0.12;
     }
 }
