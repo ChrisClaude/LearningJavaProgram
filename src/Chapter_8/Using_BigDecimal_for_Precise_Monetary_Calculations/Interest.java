@@ -1,4 +1,4 @@
-package ChapterEight.Using_BigDecimal_for_Precise_Monetary_Calculations;
+package Chapter_8.Using_BigDecimal_for_Precise_Monetary_Calculations;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
