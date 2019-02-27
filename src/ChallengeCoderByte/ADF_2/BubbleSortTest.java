@@ -7,7 +7,7 @@ use two different sorting algorithms.
 public class BubbleSortTest {
 
     public static void main(String[] args) {
-        int[] numbers = {9, 5, 7, 3, 2, 8, 16};
+        int[] numbers = {9, 5, 7, 3, 2, 8, 16, 1};
 
         System.out.println("Before sorting");
         displayArray(numbers);
