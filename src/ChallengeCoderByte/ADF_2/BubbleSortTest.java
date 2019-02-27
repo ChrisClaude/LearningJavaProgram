@@ -26,10 +26,10 @@ public class BubbleSortTest {
      */
     public static int[] bubbleSort(int [] array) {
         int count = 0;
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             int temp;
 
-            for (int j = 0; j < array.length - 1; j++) {
+            for (int j = 0; j < array.length - i; j++) {
                 if (array[j] > array[j+1]) {
                     temp = array[j];
                     array[j] = array[j+1];
