@@ -5,7 +5,8 @@ to learn programming in Java. It was initially meant for to contain only Java pr
 ##Table of content
 
 * [Prerequisites](#Prerequisites)
-# <a name="Prerequisites"></a>Prerequisites
+* [Author](#Author)
+# <a name="Prerequisites"></a> <a name="Author"></a>
 
 ## Prerequisites
 JDK latest version recommended
