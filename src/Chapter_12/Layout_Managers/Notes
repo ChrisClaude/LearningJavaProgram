@@ -1,0 +1,2 @@
+Each individual container can have only one layout manager, but multiple containers in
+the same application can each use different layout managers.
