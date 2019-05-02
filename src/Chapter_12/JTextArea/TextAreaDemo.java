@@ -10,6 +10,7 @@ public class TextAreaDemo {
         TextAreaFrame textAreaFrame = new TextAreaFrame();
         textAreaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         textAreaFrame.setSize(425, 200);
+        textAreaFrame.setLocation(450, 300);
         textAreaFrame.setVisible(true);
     }
 
