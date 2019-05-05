@@ -1,4 +1,4 @@
-package ChallengeCoderByte;
+package ChallengeCoderByte.Java_Challenges;
 
 /*
 HackerRank
