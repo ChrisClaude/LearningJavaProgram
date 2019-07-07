@@ -20,7 +20,7 @@ public class SinglyLinkedList<E> {
 
     public E first() { // returns but does not remove the first element
         if (isEmpty()) return null;
-        return tail.getElement();
+        return head.getElement();
     }
 
     public E last() { // returns (but does not remove) the last element
