@@ -1,0 +1,43 @@
+File handling in Java using FileWriter and FileReader
+
+Java FileWriter and FileReader classes are used to write
+and read data from text files (they are Character Stream
+classes). It is recommended not to use the FileInputStream
+and FileOutputStream classes if you have to read and
+write any textual information as these are Byte stream
+classes.
+
+FileWriter class
+
+Constructors:
+
+FileWriter(File file) – Constructs a FileWriter object given a File object.
+FileWriter (File file, boolean append) – constructs a FileWriter object given a File object.
+FileWriter (FileDescriptor fd) – constructs a FileWriter object associated with a file descriptor.
+FileWriter (String fileName) – constructs a FileWriter object given a file name.
+FileWriter (String fileName, Boolean append) – Constructs a FileWriter object given a file name with a Boolean indicating whether or not to append the data written.
+
+Methods:
+
+public void write (int c) throws IOException – Writes a single character.
+public void write (char [] stir) throws IOException – Writes an array of characters.
+public void write(String str)throws IOException – Writes a string.
+public void write(String str,int off,int len)throws IOException – Writes a portion of a string. Here off is offset from which to start writing characters and len is number of character to write.
+public void flush() throws IOException flushes the stream
+public void close() throws IOException flushes the stream first and then closes the writer.
+
+## BufferedWriter can be used along with FileWriter to improve speed of execution.
+
+FileReader
+
+FileReader is useful to read data in the form of characters from a ‘text’ file.
+
+This class inherit from the InputStreamReader Class.
+The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate. To specify these values yourself, construct an InputStreamReader on a FileInputStream.
+FileReader is meant for reading streams of characters. For reading streams of raw bytes, consider using a FileInputStream.
+
+Constructors:
+
+FileReader(File file) – Creates a FileReader , given the File to read from
+FileReader(FileDescripter fd) – Creates a new FileReader , given the FileDescriptor to read from
+FileReader(String fileName) – Creates a new FileReader , given the name of the file to read from
