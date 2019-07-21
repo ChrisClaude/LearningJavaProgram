@@ -50,7 +50,7 @@ public class CreateSequentialFile {
                 break;
             }
 
-            System.out.println("?");
+            System.out.print("? ");
 
         }
 
