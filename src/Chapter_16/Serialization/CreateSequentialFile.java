@@ -1,0 +1,68 @@
+package Chapter_16.Serialization;
+
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
+// CreateSequentialFile.java
+// Writing objects sequentially to file with class ObjectOutputStream.
+public class CreateSequentialFile {
+
+    private static ObjectOutputStream output; // outputs data to file
+
+    public static void main(String[] args) {
+        openFile();
+        addRecords();
+        closeFile();
+    }
+
+    // open file clients.ser
+    public static void openFile() {
+        try {
+            output =new ObjectOutputStream(Files.newOutputStream(Paths.get("C:\\Users\\Christ\\IdeaProjects\\LearningJavaProgram\\src\\Chapter_16\\Serialization\\clients.ser")));
+        } catch (IOException ioException) {
+            System.err.println("Error opening file. Terminating.");
+            System.exit(1); // terminate the program
+        }
+    }
+
+    public static void addRecords() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("%s%n%s%n? ", "Enter account number, first name, last name and balance.", "Enter end-of-file indicator to end input.");
+
+        while (input.hasNext()) { // loop until end-of-file indicator
+            try {
+                // create new record; this example assumes valid input
+                Account record = new Account(input.nextInt(), input.next(), input.next(), input.nextDouble());
+
+                // serialize record object into file
+                output.writeObject(record);
+            } catch (NoSuchElementException elementException) {
+                System.err.println("Invalid inout. Please try again.");
+                input.nextLine(); // discard input so user can try again
+            } catch (IOException ioException) {
+                System.err.println("Error writing to file. Terminating.");
+                break;
+            }
+
+            System.out.println("?");
+
+        }
+
+    }
+
+    public static void closeFile() {
+        try {
+            if (output != null)
+                output.close();
+        } catch (IOException ioException) {
+            System.err.println("Error closing file. Terminating.");
+        }
+    }
+
+}
