@@ -1,0 +1,14 @@
+Product Type   Product Description    Price per Unit     Quantity Sold
+4              12A16W Bulbs                      795                 4
+1              Air Filter                      21098               120
+5              Brake Fluid                      4909                90
+2              Brake Pads                      29909                30
+2              Castrol 5L                       8900               122
+2              Fan Belt                        16599                10
+1              Oil filter                       5589                28
+4              Petrol Filter                    2898                19
+6              Spark Plugs                      3500               128
+1              Top Gasket                      58799                 8
+5              Wiper Blades                     3400               210
+
+Total number of products: 11
