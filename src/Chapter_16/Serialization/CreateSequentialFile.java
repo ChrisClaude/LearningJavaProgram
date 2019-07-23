@@ -43,7 +43,7 @@ public class CreateSequentialFile {
                 // serialize record object into file
                 output.writeObject(record);
             } catch (NoSuchElementException elementException) {
-                System.err.println("Invalid inout. Please try again.");
+                System.err.println("Invalid input. Please try again.");
                 input.nextLine(); // discard input so user can try again
             } catch (IOException ioException) {
                 System.err.println("Error writing to file. Terminating.");
