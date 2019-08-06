@@ -1,6 +1,7 @@
 package CreatingAndProcessingSequentialFile.ReadSequentialFile;
 
-import CreateSequentialFile.Product;
+
+import CreatingAndProcessingSequentialFile.CreateSequentialFile.Product;
 
 import java.io.EOFException;
 import java.io.FileWriter;
@@ -15,7 +16,7 @@ import java.util.stream.Collectors;
 
 /**
  * ReadSequentialProductFile.java
- *
+ * <p>
  * This is the working class that reads the prod.ser sequential file
  * and outputs the objects therein to outputProducts.txt
  *
