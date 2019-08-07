@@ -11,7 +11,7 @@ public class TestManageDBResources {
             conn = DBUtil.getConnection(DBType.MYSQLDB);
             System.out.println("Connection Established to Database successfully");
         } catch (SQLException e) {
-            System.err.println(e.getMessage());
+            DBUtil.showErrorMessage(e);
         } finally {
             conn.close();
         }
