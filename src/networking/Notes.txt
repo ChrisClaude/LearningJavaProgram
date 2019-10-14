@@ -1,0 +1,12 @@
+TCP − TCP stands for Transmission Control Protocol, which allows
+for reliable communication between two applications. TCP is typically used over the Internet Protocol,
+which is referred to as TCP/IP.t Protocol, which is referred to as TCP/IP.
+
+UDP − UDP stands for User Datagram Protocol, a connection-less protocol that allows for packets of data to
+be transmitted between applications.
+
+In Java networking there is Socket Programming and URL Processing which are important
+concepts.
+
+Socket Programming:  sockets provide the communication mechanism between two computers
+using TCP.
