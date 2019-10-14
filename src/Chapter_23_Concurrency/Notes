@@ -1,0 +1,9 @@
+When we say that two tasks are operating concurrently, we mean that they’re both making progress at once.
+
+When we say that two tasks are operating in parallel, we mean that they’re executing
+simultaneously. In this sense, parallelism is a subset of concurrency. The human body performs
+a great variety of operations in parallel. Respiration, blood circulation, digestion,
+thinking and walking, for example, can occur in parallel, as can all the senses—sight,
+hearing, touch, smell and taste. It’s believed that this parallelism is possible because the
+human brain is thought to contain billions of “processors.” Today’s multi-core computers
+have multiple processors that can perform tasks in parallel.
